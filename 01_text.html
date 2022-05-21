@@ -6,89 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Airat Viktorovich, tutor, english language">
     <meta name="description" content="This website is an online CV of Airat Viktorovich">
+    <link rel="stylesheet" href="01_styling.css">
     <title>Airat Viktorovich CV</title>
 </head>
 <body>
+<div class="container">
+            <div class="info">
+                <img src="visuals/spooky.jpg" alt="Airat Viktorovich" class="avatar">
+                
+            <div class="info-text">
+            <h1>Айрат Викторович</h1>
 
-    <img src="visuals/spooky.jpg" width="300">
+            <p>Я - Айрат Викторович, преподаватель английского языка.</p>
 
-    <h1>Айрат Викторович</h1>
+            <p>Я люблю играть на <em>барабанах</em>, изучать <em>иностранные языки</em> и общаться с представителями разных культур.</p>
 
-    <p>Я - Айрат Викторович, <strong>преподаватель английского языка.</strong></p>
+            <h4>Список социальных сетей:</h4>
 
-    <p>Я люблю играть на <em>барабанах</em>, изучать <em>иностранные языки</em> и общаться с представителями разных культур.</p>
+            <a href="https://vk.com/no_x_wars" target="_blank">VK</a>
+            |
+            <a href="https://t.me/s_I_AM_ese_Cat" target="_blank">Telegram</a>
+        </div>
+        </div>
 
-    <h4>Список социальных сетей:</h4>
+        <div class="card bg-green">
+            <h2>Увлечения:</h2>
 
-    <a href="https://vk.com/no_x_wars" target="_blank">VK</a>
-    |
-    <a href="https://t.me/s_I_AM_ese_Cat" target="_blank">Telegram</a>
-
-    <h2>Увлечения:</h2>
-
-    <ol>
-        <li>Кино</li>
-        <li>Музыка</li>
-        <li>Иностранные языки
-            <ol type="a">
-                <li>Английский</li>
-                <li>Итальянский</li>
-                <li>Немецкий</li>
+            <ol class="list">
+                <li>Кино</li>
+                <li>Музыка</li>
+                <li>Иностранные языки
+                    <ol type="a">
+                        <li>Английский</li>
+                        <li>Итальянский</li>
+                        <li>Немецкий</li>
+                    </ol>
+                </li>
+                <li>Литература</li>
             </ol>
-        </li>
-        <li>Литература</li>
-    </ol>
+        </div>
 
-    <h2>Опыт работы</h2>
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Компания</th>
-                    <th>Должность</th>
-                    <th>Годы</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Skyeng</td>
-                    <td>Преподаватель английского</td>
-                    <td>1973-1976</td>
-                </tr>
-                <tr>
-                    <td>TMNT</td>
-                    <td>Leonardo</td>
-                    <td>classified</td>
-                </tr>
-                <tr>
-                    <td>OccupySpace</td>
-                    <td>Astronaut</td>
-                    <td>2032-2034</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2>Связаться со мной</h2>
-
-        <form>
-
-            <div>
-                <label for="name">Имя</label>
-                <input type="text" id="name" placeholder="Введите ваше имя">
+                <table class="table">
+                    <!-- <thead>
+                        <tr>
+                            <th>Компания</th>
+                            <th>Должность</th>
+                            <th>Годы</th>
+                        </tr>
+                    </thead> -->
+                    <tbody>
+                        <tr>
+                            <td>Skyeng</td>
+                            <td>Преподаватель английского</td>
+                            <td>1973-1976</td>
+                        </tr>
+                        <tr>
+                            <td>TMNT</td>
+                            <td>Leonardo</td>
+                            <td>classified</td>
+                        </tr>
+                        <tr>
+                            <td>OccupySpace</td>
+                            <td>Astronaut</td>
+                            <td>2032-2034</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="type your e-mail">
-            </div>
+            <form action="/" class="form">
+                <h2>Связаться со мной</h2>
 
-            <div>
-                <label for="message">Введите ваше сообщение</label>
-                <br>
-                <textarea id="message" cols="25" rows="5" placeholder="отправьте сообщение автору"></textarea>
-            </div>
+                <div class="form-row">
 
-            <input type="submit" value="Отправить!">
-        </form>
+                    <div class="feedback">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя">
+                    </div>
+
+                    <div class="feedback">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="type your e-mail">
+                    </div>
+                </div>
+
+                    <div class="feedback">
+                        <label for="message">Введите ваше сообщение</label>
+                        <textarea id="message" cols="25" rows="5" placeholder="отправьте сообщение автору"></textarea>
+                    </div>
+
+
+                    <input type="submit" value="Отправить!" class="btn">
+            </div>
+                </form>
+</div>
 </body>
 </html>
